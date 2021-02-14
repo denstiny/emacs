@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: Symbol-iterator
+# key: Siter
+# --
+[Symbol.iterator]() {
+	${1:}
+}

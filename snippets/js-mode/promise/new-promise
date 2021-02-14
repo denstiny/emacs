@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: new Promise
+# key: nP
+# --
+
+new Promise((res, rej)=> {
+    $1
+});

@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: forof
+# --
+for (let ${1:ele} of ${2:collec}) {
+  $0
+}

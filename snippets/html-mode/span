@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# contributor : EvanMeek <the_lty_mail@foxmail.com>
+# name: <span>...</span>
+# --
+<span>$0</span>

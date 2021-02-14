@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# contributor : EvanMeek <the_lty_mail@foxmail.com>
+# name: <div>...</div>
+# --
+<div>
+  $0
+</div>

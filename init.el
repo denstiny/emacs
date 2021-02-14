@@ -27,6 +27,8 @@
 
 ;; 关闭菜单栏
 (menu-bar-mode -1)
+;; 字体大小
+(set-face-attribute 'default nil :height 150)
 
 ;; 回到关闭文件前光标的位置
 (use-package saveplace
@@ -36,13 +38,35 @@
 ;; 关闭备份
 (setq make-backup-files nil auto-save-default nil)
 
-(global-display-line-numbers-mode +1)
+;; 行号
+;;(global-display-line-numbers-mode +1)
+(column-number-mode)
+
+;; Enable line numbers for some modes
+(dolist (mode '(text-mode-hook
+                prog-mode-hook
+                conf-mode-hook))
+  (add-hook mode (lambda () (display-line-numbers-mode 1))))
+
+;; Override some modes which derive from the above
+(dolist (mode '(org-mode-hook))
+  (add-hook mode (lambda () (display-line-numbers-mode 0))))
+
+;; 打开大文件不警告
+(setq large-file-warning-threshold nil)
+
+;; 添加功能时不警告
+(setq ad-redefinition-action 'accept)
+
 ;; 关闭烦人的提示
 (setq ring-bell-function 'ignore blink-cursor-mode nil)
+
 ;; 关闭多编辑器同时编辑统一文件时锁文件操作
 (setq create-lockfiles nil)
+
 ;;;; 剪切板设置
 (setq x-select-enable-clipboard-manager nil)
+
 ;; 任何地方都使用UTF-8
 (set-charset-priority 'unicode) 
 (setq locale-coding-system   'utf-8)    ; pretty
@@ -59,20 +83,41 @@
 (setq display-time-day-and-date t) ;;显示时间、星期、日期
 ;; 高亮对应的括号
 (show-paren-mode 1)
+
 ;; evil vim 模式
-(add-to-list 'load-path "~/.emacs.d/plugins/evil")
-(require 'evil)
-(evil-mode 1) 
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(package-selected-packages
-   '(company helm doom-themes autopair paredit flycheck-irony irony-eldoc ivy-posframe ivy-prescient auto-complete-clang company-irony-c-headers auto-complete-c-headers auto-complete spacemacs-theme afternoon-theme)))
+(use-package evil
+  :config
+  (evil-mode 1))
 
 ;; emacs 主题配置
 (load-theme 'spacemacs-dark' t)
+  
+(define-fringe-bitmap 'flycheck-fringe-bitmap-ball
+    (vector #b00000000
+            #b00000000
+            #b00000000
+            #b00000000
+            #b00000000
+            #b00111000
+            #b01111100
+            #b11111110
+            #b11111110
+            #b01111100
+            #b00111000
+            #b00000000
+            #b00000000
+            #b00000000
+            #b00000000
+            #b00000000
+            #b00000000))
+
+(flycheck-define-error-level 'error
+  :severity 100
+  :compilation-level 2
+  :overlay-category 'flycheck-error-overlay
+  :fringe-bitmap 'flycheck-fringe-bitmap-ball
+  :fringe-face 'flycheck-fringe-error
+  :error-list-face 'flycheck-error-list-error)
 
 ;; 命令行补全
 (use-package helm
@@ -139,5 +184,28 @@
   ;; https://github.com/emacs-lsp/lsp-mode/blob/master/docs/tutorials/how-to-turn-off.md
   (setq lsp-enable-symbol-highlighting t
         lsp-ui-doc-enable t
-        lsp-lens-enable t))
+       rlsp-lens-enable t))
+
+;; 状态栏
+(require 'spaceline-config)
+(spaceline-spacemacs-theme)
+
+(use-package neotree
+  :config
+  (global-set-key [f8] 'neotree-toggle))
+
+;;  语法检查
+(use-package flycheck
+  :ensure t
+  :init (global-flycheck-mode))
+
+;; 自动配对括号
+(use-package smartparens-config
+  :ensure smartparens
+  :config
+  (progn
+    (show-smartparens-global-mode t)))
+
+(add-hook 'prog-mode-hook 'turn-on-smartparens-strict-mode)
+(add-hook 'markdown-mode-hook 'turn-on-smartparens-strict-mode)
 
