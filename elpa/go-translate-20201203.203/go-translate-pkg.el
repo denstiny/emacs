@@ -1,0 +1,2 @@
+;;; Generated package description from /home/aercn/.emacs.d/elpa/go-translate-20201203.203/go-translate.el  -*- no-byte-compile: t -*-
+(define-package "go-translate" "20201203.203" "Google Translate" '((emacs "26.1")) :commit "ea63d0ad9816aa1c478c66bd1ff9978e8330d3cb" :authors '(("lorniu" . "lorniu@gmail.com")) :maintainer '("lorniu" . "lorniu@gmail.com") :keywords '("convenience") :url "https://github.com/lorniu/go-translate")
