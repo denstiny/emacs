@@ -11,130 +11,163 @@
       (package-refresh-contents))
     (package-install package)))
 
+
+;; use-package
+(setq use-package-always-ensure t)
+
 ;; evil
 (add-to-list 'load-path "~/.emacs.d/plugins/evil")
 (require 'evil)
 (evil-mode 1) 
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(package-selected-packages
-   '(autopair paredit flycheck-irony irony-eldoc ivy-posframe ivy-prescient auto-complete-clang company-irony-c-headers auto-complete-c-headers auto-complete spacemacs-theme afternoon-theme)))
-
 ;; theme
-(load-theme 'spacemacs-dark' t)
 (setq frame-resize-pixelwise t) ;;解决aweosme wm窗口空缺
-
-
-;; 显示时间
-(display-time-mode 1)  ;; 常显 
-(setq display-time-24hr-format t) ;;格式
-(setq display-time-day-and-date t) ;;显示时间、星期、日期
 
 ;; 隐藏菜单栏工具栏
 (tool-bar-mode 0)
 (menu-bar-mode 0)
 (scroll-bar-mode 0)
 
-;; 启动界面
+;; 自动匹配括号
 
-
-;; user config
-
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
-
-
-
-;; c/c++
-(add-to-list 'load-path "~/.emacs.d/elpa/auto-complete-20201213.1255/")
-(require 'auto-complete)
-(add-to-list 'ac-dictionary-directories "~/.emacs.d/elpa/auto-complete-20201213.1255/dict/")
-(require 'auto-complete-config)
-(add-to-list 'load-path "~/.emacs.d/elpa/auto-complete-clang-20140409.752/")
-(require 'auto-complete-clang)  
-;; 设置不自动启动
-(setq ac-auto-start nil)  
-;; 设置响应时间 0.5
-(setq ac-quick-help-delay 0.5)  
-
-(ac-set-trigger-key "TAB")  
-;;(define-key ac-mode-map  [(control tab)] 'auto-complete)  
-;; 提示快捷键为 M-/
-(define-key ac-mode-map  (kbd "M-/") 'auto-complete) 
-(defun my-ac-config ()  
-  (setq ac-clang-flags  
-        (mapcar(lambda (item)(concat "-I" item))  
-               (split-string  
-                "
- /usr/include/c++/10.2.0
- /usr/include/x86_64-linux-gnu/c++/10.2.0/.
- /usr/include/c++/10.2.0/backward
- /usr/lib/gcc/x86_64-linux-gnu/10.2.0/include
- /usr/local/include
- /usr/lib/gcc/x86_64-linux-gnu/10.2.0/include-fixed
- /usr/include/x86_64-linux-gnu
- /usr/include
-"
-)))  
-(setq-default ac-sources '(ac-source-abbrev ac-source-dictionary ac-source-words-in-same-mode-buffers))  
-(add-hook 'emacs-lisp-mode-hook 'ac-emacs-lisp-mode-setup)  
-(add-hook 'c-mode-common-hook 'ac-cc-mode-setup)  
-(add-hook 'ruby-mode-hook 'ac-ruby-mode-setup)  
-(add-hook 'css-mode-hook 'ac-css-mode-setup)  
-(add-hook 'auto-complete-mode-hook 'ac-common-setup)  
-(global-auto-complete-mode t))  
-(defun my-ac-cc-mode-setup ()  
-  (setq ac-sources (append '(ac-source-clang ac-source-yasnippet) ac-sources)))  
-(add-hook 'c-mode-common-hook 'my-ac-cc-mode-setup)  
-;; ac-source-gtags  
-(my-ac-config)  
-(ac-config-default)
-
-
-
-;; ivy-posframe
-(require 'ivy-posframe)
-;; display at `ivy-posframe-style'
-(setq ivy-posframe-display-functions-alist '((t . ivy-posframe-display)))
-;; (setq ivy-posframe-display-functions-alist '((t . ivy-posframe-display-at-frame-center)))
- (setq ivy-posframe-display-functions-alist '((t . ivy-posframe-display-at-window-center)))
-;; (setq ivy-posframe-display-functions-alist '((t . ivy-posframe-display-at-frame-bottom-left)))
-;; (setq ivy-posframe-display-functions-alist '((t . ivy-posframe-display-at-window-bottom-left)))
-;; (setq ivy-posframe-display-functions-alist '((t . ivy-posframe-display-at-frame-top-center)))
-(ivy-posframe-mode 1)
+(use-package autopair
+  :ensure t
+  :defer t)
 
 ;; setting
 (set-face-attribute 'default nil :height 200) ;;字体大小
+(setq make-backup-files nil) ;; 关闭自动备份
+(setq backup-directory-alist
+      '((".*" . "~/.emacs.d/var/backups")))
 
-(add-to-list 'load-path "~/.emacs.d/elpa/autopair")  ;;自动匹配括号
-(require 'autopair)
+(setq-default make-backup-files nil)
+;关闭自动保存模式
+(setq auto-save-mode nil)
+;不生成 #filename# 临时文件
+(setq auto-save-default nil)
+
+
+(setq custom-file "~/.emacs.d/custom.el")
+(load custom-file)
+
 (autopair-global-mode) ;; enable autopair in all buffers
-(setq frame-title-format "[%b]")                ;显示buffer的名字
 (global-display-line-numbers-mode)
-(electric-indent-mode t)                                 ;开启智能缩进
+
+;; yes/no is y/n
+(defalias 'yes-or-no-p 'y-or-n-p)
+
+;; auto company
+(use-package company
+  :config
+  (setq company-dabbrev-code-everywhere t
+        company-dabbrev-code-modes t
+        company-dabbrev-code-other-buffers 'all
+        company-dabbrev-downcase nil
+        company-dabbrev-ignore-case t
+        company-dabbrev-other-buffers 'all
+        company-require-match nil
+        company-minimum-prefix-length 2
+        company-show-numbers t
+        company-tooltip-limit 20
+        company-idle-delay 0
+        company-echo-delay 0
+        company-tooltip-offset-display 'scrollbar
+        company-begin-commands '(self-insert-command))
+  (push '(company-semantic :with company-yasnippet) company-backends)
+  :hook ((after-init . global-company-mode)))
 
 
 
-;; markdown
-(defun markdown-to-html ()
-  (interactive)
-  (start-process "grip" "*gfm-to-html*" "grip" (buffer-file-name) "5000")
-  (browse-url (format "http://localhost:5000/%s.%s" (file-name-base) (file-name-extension (buffer-file-name)))))
-(global-set-key (kbd "C-c m")   'markdown-to-html)
+;; 启动界面
+(use-package dashboard
+  :ensure t
+  :config
+  (setq dashboard-center-content t)
+  (dashboard-setup-startup-hook)
+  (setq dashboard-banner-logo-title "Aerocn's Emacs "
+	dashboard-startup-banner 'logo
+	dashhoard-center-content t
+	dashboard-set-heading-icons t
+	dashboard-set-file-icons t
+	dashboard-set-navigator t)
+  )
+
+
+;; english terchar
+(use-package english-teacher
+  :load-path "~/.emacs.d/elpa/english-teacher.el" ;; NOTE: here type english teacher directory
+  :hook ((Info-mode
+	  elfeed-show-mode
+	  eww-mode
+	  Man-mode
+	  Woman-Mode) . english-teacher-follow-mode))
+
+;; term
+(use-package vterm
+  :ensure t
+  :bind (("C-' C-t" . open-vterm))
+  :config
+  (define-key vterm-mode-map (kbd "C-c p" 'previous-buffer))
+  (define-key vterm-mode-map (kbd "C-c n" 'next-buffer))
+  )
+
+
+;; java
+(load-file "~/.emacs.d/user-config/java-config.el")
+
+;; c/c++
+(load-file "~/.emacs.d/user-config/ccls-config.el")
+
+
+;; eaf 
+(use-package eaf
+  :load-path "~/.emacs.d/site-lisp/emacs-application-framework" ; Set to "/usr/share/emacs/site-lisp/eaf" if installed from AUR
+  :init
+  (use-package epc :defer t :ensure t)
+  (use-package ctable :defer t :ensure t)
+  (use-package deferred :defer t :ensure t)
+  (use-package s :defer t :ensure t)
+  :custom
+  (eaf-browser-continue-where-left-off t)
+  :config
+  (eaf-setq eaf-browser-enable-adblocker "true")
+  (eaf-bind-key scroll_up "C-n" eaf-pdf-viewer-keybinding)
+  (eaf-bind-key scroll_down "C-p" eaf-pdf-viewer-keybinding)
+  (eaf-bind-key take_photo "p" eaf-camera-keybinding)
+  (eaf-bind-key nil "M-q" eaf-browser-keybinding)
+  (setq eaf-proxy-type "https")
+  (setq eaf-proxy-host "127.0.0.1")
+  (setq eaf-proxy-port "7690"))
+
+;; theme
+(use-package doom-themes
+  :config
+  ;; Global settings (defaults)
+  (setq doom-themes-enable-bold t    ; if nil, bold is universally disabled
+	doom-themes-enable-italic t) ; if nil, italics is universally disabled
+  (load-theme 'doom-one t)
+
+  ;; Enable flashing mode-line on errors
+  (doom-themes-visual-bell-config)
+  
+  ;; Enable custom neotree theme (all-the-icons must be installed!)
+  (doom-themes-neotree-config)
+  ;; or for treemacs users
+  (setq doom-themes-treemacs-theme "doom-colors") ; use the colorful treemacs theme
+  (doom-themes-treemacs-config))
+
+(use-package doom-modeline
+  :ensure t
+  :init (doom-modeline-mode 1)
+  :config
+  (load-file "~/.emacs.d/user-config/tabline.el"))
+
+
+;;(setq doom-modeline-height 2)
 
 
 
-;; file tree
-(add-to-list 'load-path "~/.emacs.d/plugins/neotree")
-(require 'neotree)
-(global-set-key [f3] 'neotree-toggle)
+(use-package company-box
+  :ensure t
+  :hook (company-mode-hook . company-box-mode))
 
-;; org  mode
-(add-hook 'org-mode-hook (lambda () (setq truncate-lines nil)))
+
