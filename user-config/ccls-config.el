@@ -1,18 +1,9 @@
-;(use-package ccls
-;     :defines projectile-project-root-files-top-down-recurring
-;     :hook ((c-mode c++-mode objc-mode cuda-mode) . (lambda () (require 'ccls)))
-;     :config
-;     (with-eval-after-load 'projectile
-;       (setq projectile-project-root-files-top-down-recurring
-;             (append '("compile_commands.json" ".ccls")
-;                     projectile-project-root-files-top-down-recurring))))
-
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/") t)
 ;(package-initialize)
 
 (setq package-selected-packages '(lsp-mode yasnippet lsp-treemacs helm-lsp
-    projectile hydra flycheck company avy which-key helm-xref dap-mode))
+    projectile hydra flycheck  avy which-key helm-xref dap-mode))
 
 (when (cl-find-if-not #'package-installed-p package-selected-packages)
   (package-refresh-contents)

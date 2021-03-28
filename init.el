@@ -111,11 +111,6 @@
   )
 
 
-;; java
-(load-file "~/.emacs.d/user-config/java-config.el")
-
-;; c/c++
-(load-file "~/.emacs.d/user-config/ccls-config.el")
 
 
 ;; eaf 
@@ -133,10 +128,11 @@
   (eaf-bind-key scroll_up "C-n" eaf-pdf-viewer-keybinding)
   (eaf-bind-key scroll_down "C-p" eaf-pdf-viewer-keybinding)
   (eaf-bind-key take_photo "p" eaf-camera-keybinding)
-  (eaf-bind-key nil "M-q" eaf-browser-keybinding)
-  (setq eaf-proxy-type "https")
-  (setq eaf-proxy-host "127.0.0.1")
-  (setq eaf-proxy-port "7690"))
+  (eaf-bind-key nil "M-q" eaf-browser-keybinding))
+  ;(setq eaf-proxy-type "http")
+  ;(setq eaf-proxy-host "127.0.0.1")
+  ;(setq eaf-proxy-port "1080")
+
 
 ;; theme
 (use-package doom-themes
@@ -170,4 +166,12 @@
   :ensure t
   :hook (company-mode-hook . company-box-mode))
 
+;; c/c++
+(load-file "~/.emacs.d/user-config/ccls-config.el")
+
+;; java
+(load-file "~/.emacs.d/user-config/java-config.el")
+
+;; org config
+(load-file "~/.emacs.d/user-config/org-config.el")
 
