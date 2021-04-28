@@ -1,0 +1,1268 @@
+(AutoLog) Called: EPCClientHandler._send('call', 1, Symbol('eval-in-emacs'), ['eaf--first-start', 'NDI4MTM=', 'VHJ1ZQ=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+(AutoLog) Called: ThreadingEPCHandler.setup()
+(AutoLog) Returns: ThreadingEPCHandler.setup(...) = None
+(AutoLog) Called: ThreadingEPCHandler.handle()
+receiving...
+received: length = 95; data = b'(call 5 new_buffer ("daf5-3ce2-f3d2-620b-2f2d-56da-06ad" "http://www.baidu.com" "browser" ""))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 5 new_buffer ("daf5-3ce2-f3d2-620b-2f2d-56da-06ad" "http://www.baidu.com" "browser" ""))\n')
+receiving...
+(AutoLog) Called: ThreadingEPCHandler._handle_call(5, Symbol('new_buffer'), ['daf5-3ce2-f3d2-620b-2f2d-56da-06ad', 'http://www.baidu.com', 'browser', ''])
+received: length = 15; data = b'(return 1 nil)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 1 nil)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 5, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 5, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 83; data = b'(call 6 update_views ("daf5-3ce2-f3d2-620b-2f2d-56da-06ad:31457458:0:0:1896:996"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 6 update_views ("daf5-3ce2-f3d2-620b-2f2d-56da-06ad:31457458:0:0:1896:996"))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(6, Symbol('update_views'), ['daf5-3ce2-f3d2-620b-2f2d-56da-06ad:31457458:0:0:1896:996'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 6, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 6, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+receiving...
+received: length = 83; data = b'(call 7 update_views ("daf5-3ce2-f3d2-620b-2f2d-56da-06ad:31457458:0:0:1896:997"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 7 update_views ("daf5-3ce2-f3d2-620b-2f2d-56da-06ad:31457458:0:0:1896:997"))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(7, Symbol('update_views'), ['daf5-3ce2-f3d2-620b-2f2d-56da-06ad:31457458:0:0:1896:997'])
+receiving...
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 7, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 7, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 2, Symbol('eval-in-emacs'), ['eaf--update-buffer-details', 'ZGFmNS0zY2UyLWYzZDItNjIwYi0yZjJkLTU2ZGEtMDZhZA==', 'aHR0cHM6Ly93d3cuYmFpZHUuY29t', 'aHR0cHM6Ly93d3cuYmFpZHUuY29tLw=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 13; data = b'(return 2 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 2 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 3, Symbol('eval-in-emacs'), ['eaf--update-buffer-details', 'ZGFmNS0zY2UyLWYzZDItNjIwYi0yZjJkLTU2ZGEtMDZhZA==', '55m+5bqm5LiA5LiL77yM5L2g5bCx55+l6YGT', 'aHR0cHM6Ly93d3cuYmFpZHUuY29tLw=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 13; data = b'(return 3 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 3 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 93; data = b'(call 8 execute_function ("daf5-3ce2-f3d2-620b-2f2d-56da-06ad" "insert_or_scroll_down" "k"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 8 execute_function ("daf5-3ce2-f3d2-620b-2f2d-56da-06ad" "insert_or_scroll_down" "k"))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(8, Symbol('execute_function'), ['daf5-3ce2-f3d2-620b-2f2d-56da-06ad', 'insert_or_scroll_down', 'k'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 8, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 8, None)
+receiving...
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 71; data = b'(call 9 send_key ("daf5-3ce2-f3d2-620b-2f2d-56da-06ad" "<backspace>"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 9 send_key ("daf5-3ce2-f3d2-620b-2f2d-56da-06ad" "<backspace>"))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(9, Symbol('send_key'), ['daf5-3ce2-f3d2-620b-2f2d-56da-06ad', '<backspace>'])
+receiving...
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 9, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 9, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 72; data = b'(call 10 send_key ("daf5-3ce2-f3d2-620b-2f2d-56da-06ad" "<backspace>"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 10 send_key ("daf5-3ce2-f3d2-620b-2f2d-56da-06ad" "<backspace>"))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(10, Symbol('send_key'), ['daf5-3ce2-f3d2-620b-2f2d-56da-06ad', '<backspace>'])
+receiving...
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 10, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 10, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 72; data = b'(call 11 send_key ("daf5-3ce2-f3d2-620b-2f2d-56da-06ad" "<backspace>"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 11 send_key ("daf5-3ce2-f3d2-620b-2f2d-56da-06ad" "<backspace>"))\n')
+receiving...
+(AutoLog) Called: ThreadingEPCHandler._handle_call(11, Symbol('send_key'), ['daf5-3ce2-f3d2-620b-2f2d-56da-06ad', '<backspace>'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 11, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 11, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 62; data = b'(call 12 send_key ("daf5-3ce2-f3d2-620b-2f2d-56da-06ad" "b"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 12 send_key ("daf5-3ce2-f3d2-620b-2f2d-56da-06ad" "b"))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(12, Symbol('send_key'), ['daf5-3ce2-f3d2-620b-2f2d-56da-06ad', 'b'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 12, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 12, None)
+receiving...
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 94; data = b'(call 13 execute_function ("daf5-3ce2-f3d2-620b-2f2d-56da-06ad" "insert_or_focus_input" "i"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 13 execute_function ("daf5-3ce2-f3d2-620b-2f2d-56da-06ad" "insert_or_focus_input" "i"))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(13, Symbol('execute_function'), ['daf5-3ce2-f3d2-620b-2f2d-56da-06ad', 'insert_or_focus_input', 'i'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 13, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 13, None)
+receiving...
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 95; data = b'(call 14 execute_function ("daf5-3ce2-f3d2-620b-2f2d-56da-06ad" "insert_or_scroll_right" "l"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 14 execute_function ("daf5-3ce2-f3d2-620b-2f2d-56da-06ad" "insert_or_scroll_right" "l"))\n')
+receiving...
+(AutoLog) Called: ThreadingEPCHandler._handle_call(14, Symbol('execute_function'), ['daf5-3ce2-f3d2-620b-2f2d-56da-06ad', 'insert_or_scroll_right', 'l'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 14, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 14, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 94; data = b'(call 15 execute_function ("daf5-3ce2-f3d2-620b-2f2d-56da-06ad" "insert_or_focus_input" "i"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 15 execute_function ("daf5-3ce2-f3d2-620b-2f2d-56da-06ad" "insert_or_focus_input" "i"))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(15, Symbol('execute_function'), ['daf5-3ce2-f3d2-620b-2f2d-56da-06ad', 'insert_or_focus_input', 'i'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 15, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 15, None)
+receiving...
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 62; data = b'(call 16 send_key ("daf5-3ce2-f3d2-620b-2f2d-56da-06ad" "b"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 16 send_key ("daf5-3ce2-f3d2-620b-2f2d-56da-06ad" "b"))\n')
+receiving...
+(AutoLog) Called: ThreadingEPCHandler._handle_call(16, Symbol('send_key'), ['daf5-3ce2-f3d2-620b-2f2d-56da-06ad', 'b'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 16, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 16, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 94; data = b'(call 17 execute_function ("daf5-3ce2-f3d2-620b-2f2d-56da-06ad" "insert_or_focus_input" "i"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 17 execute_function ("daf5-3ce2-f3d2-620b-2f2d-56da-06ad" "insert_or_focus_input" "i"))\n')
+receiving...
+(AutoLog) Called: ThreadingEPCHandler._handle_call(17, Symbol('execute_function'), ['daf5-3ce2-f3d2-620b-2f2d-56da-06ad', 'insert_or_focus_input', 'i'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 17, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 17, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 95; data = b'(call 18 execute_function ("daf5-3ce2-f3d2-620b-2f2d-56da-06ad" "insert_or_scroll_right" "l"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 18 execute_function ("daf5-3ce2-f3d2-620b-2f2d-56da-06ad" "insert_or_scroll_right" "l"))\n')
+receiving...
+(AutoLog) Called: ThreadingEPCHandler._handle_call(18, Symbol('execute_function'), ['daf5-3ce2-f3d2-620b-2f2d-56da-06ad', 'insert_or_scroll_right', 'l'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 18, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 18, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 94; data = b'(call 19 execute_function ("daf5-3ce2-f3d2-620b-2f2d-56da-06ad" "insert_or_focus_input" "i"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 19 execute_function ("daf5-3ce2-f3d2-620b-2f2d-56da-06ad" "insert_or_focus_input" "i"))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(19, Symbol('execute_function'), ['daf5-3ce2-f3d2-620b-2f2d-56da-06ad', 'insert_or_focus_input', 'i'])
+receiving...
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 19, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 19, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 69; data = b'(call 20 send_key ("daf5-3ce2-f3d2-620b-2f2d-56da-06ad" "<return>"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 20 send_key ("daf5-3ce2-f3d2-620b-2f2d-56da-06ad" "<return>"))\n')
+receiving...
+(AutoLog) Called: ThreadingEPCHandler._handle_call(20, Symbol('send_key'), ['daf5-3ce2-f3d2-620b-2f2d-56da-06ad', '<return>'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 20, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 20, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 4, Symbol('eval-in-emacs'), ['eaf--update-buffer-details', 'ZGFmNS0zY2UyLWYzZDItNjIwYi0yZjJkLTU2ZGEtMDZhZA==', 'YmlsaWJpbGlf55m+5bqm5pCc57Si', 'aHR0cHM6Ly93d3cuYmFpZHUuY29tL3M/aWU9dXRmLTgmZj04JnJzdl9icD0xJnJzdl9pZHg9MSZ0bj1iYWlkdSZ3ZD1iaWxpYmlsaSZmZW5sZWk9MjU2JnJzdl9wcT1hODlkYTdhMDAwMDI5MmEzJnJzdl90PTU5NDVyJTJCUW05dXNKcjd2WWclMkZDTHBlNThRUHVYR1VyaU5hTHpDVDh5WGJYbEdadEZVSVNDak8zcnlnOCZycWxhbmc9Y24mcnN2X2VudGVyPTEmcnN2X2RsPWliJnJzdl9zdWczPTEwJnJzdl9zdWcxPTgmcnN2X3N1Zzc9MTAwJnJzdl9zdWcyPTAmcnN2X2J0eXBlPWkmaW5wdXRUPTIxODgmcnN2X3N1ZzQ9MjE4OQ=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 13; data = b'(return 4 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 4 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 5, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'ZGFmNS0zY2UyLWYzZDItNjIwYi0yZjJkLTU2ZGEtMDZhZA=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 13; data = b'(return 5 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 5 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 6, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'ZGFmNS0zY2UyLWYzZDItNjIwYi0yZjJkLTU2ZGEtMDZhZA=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 13; data = b'(return 6 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 6 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 7, Symbol('eval-in-emacs'), ['eaf--create-new-browser-buffer', 'M2Y1Yi0wZmQzLWZhMTEtNjcxYS01ZWZiLTZlNWUtZGMzNw=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 77; data = b'(return 7 #<buffer Browser Popup Window 3f5b-0fd3-fa11-671a-5efb-6e5e-dc37>)\n'
+receiving...
+received: length = 84; data = b'(call 21 update_views ("3f5b-0fd3-fa11-671a-5efb-6e5e-dc37:31457458:0:0:1896:997"))\n'
+(AutoLog) Called: EPCClientHandler._handle(b'(return 7 #<buffer Browser Popup Window 3f5b-0fd3-fa11-671a-5efb-6e5e-dc37>)\n')
+(return 7 ...): Got too many arguments in the reply: [Symbol('#<buffer'), Symbol('Browser'), Symbol('Popup'), Symbol('Window'), Symbol('3f5b-0fd3-fa11-671a-5efb-6e5e-dc37>')]
+EPCError("(return 7 ...): Got too many arguments in the reply: [Symbol('#<buffer'), Symbol('Browser'), Symbol('Popup'), Symbol('Window'), Symbol('3f5b-0fd3-fa11-671a-5efb-6e5e-dc37>')]")
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 21 update_views ("3f5b-0fd3-fa11-671a-5efb-6e5e-dc37:31457458:0:0:1896:997"))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(21, Symbol('update_views'), ['3f5b-0fd3-fa11-671a-5efb-6e5e-dc37:31457458:0:0:1896:997'])
+receiving...
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 21, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 21, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 8, Symbol('eval-in-emacs'), ['eaf--update-buffer-details', 'M2Y1Yi0wZmQzLWZhMTEtNjcxYS01ZWZiLTZlNWUtZGMzNw==', 'aHR0cHM6Ly93d3cuYmFpZHUuY29tL2xpbms/dXJsPUFKRHJXRS1yenp6UHNiRnNIZktyYmN0OWRhTmlKWFBiNElWTENRNExpQ1dSSG12TXNhLVdSZ2ZzWGFvSzZmcEwmd2Q9JmVxaWQ9ZTdjZDU3YTYwMDA3OTgxYjAwMDAwMDA1NjA4MjVmZTk=', 'aHR0cHM6Ly93d3cuYmFpZHUuY29tL2xpbms/dXJsPUFKRHJXRS1yenp6UHNiRnNIZktyYmN0OWRhTmlKWFBiNElWTENRNExpQ1dSSG12TXNhLVdSZ2ZzWGFvSzZmcEwmd2Q9JmVxaWQ9ZTdjZDU3YTYwMDA3OTgxYjAwMDAwMDA1NjA4MjVmZTk='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 13; data = b'(return 8 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 8 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 9, Symbol('eval-in-emacs'), ['eaf--update-buffer-details', 'M2Y1Yi0wZmQzLWZhMTEtNjcxYS01ZWZiLTZlNWUtZGMzNw==', 'aHR0cHM6Ly93d3cuYmlsaWJpbGkuY29t', 'aHR0cHM6Ly93d3cuYmlsaWJpbGkuY29tLw=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 13; data = b'(return 9 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 9 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 10, Symbol('eval-in-emacs'), ['eaf--update-buffer-details', 'M2Y1Yi0wZmQzLWZhMTEtNjcxYS01ZWZiLTZlNWUtZGMzNw==', '5ZOU5ZOp5ZOU5ZOpICjjgpwt44KcKeOBpOODrSDlubLmna9+LWJpbGliaWxp', 'aHR0cHM6Ly93d3cuYmlsaWJpbGkuY29tLw=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 14; data = b'(return 10 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 10 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 11, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'M2Y1Yi0wZmQzLWZhMTEtNjcxYS01ZWZiLTZlNWUtZGMzNw=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 12, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'ZGFmNS0zY2UyLWYzZDItNjIwYi0yZjJkLTU2ZGEtMDZhZA=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 14; data = b'(return 11 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._send('call', 13, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'M2Y1Yi0wZmQzLWZhMTEtNjcxYS01ZWZiLTZlNWUtZGMzNw=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+(AutoLog) Called: EPCClientHandler._handle(b'(return 11 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 14; data = b'(return 12 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 12 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 14; data = b'(return 13 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 13 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 14, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'M2Y1Yi0wZmQzLWZhMTEtNjcxYS01ZWZiLTZlNWUtZGMzNw=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 15, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'ZGFmNS0zY2UyLWYzZDItNjIwYi0yZjJkLTU2ZGEtMDZhZA=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 16, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'M2Y1Yi0wZmQzLWZhMTEtNjcxYS01ZWZiLTZlNWUtZGMzNw=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 14; data = b'(return 14 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 14 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 14; data = b'(return 15 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 15 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 14; data = b'(return 16 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 16 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 17, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'M2Y1Yi0wZmQzLWZhMTEtNjcxYS01ZWZiLTZlNWUtZGMzNw=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 18, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'ZGFmNS0zY2UyLWYzZDItNjIwYi0yZjJkLTU2ZGEtMDZhZA=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 14; data = b'(return 17 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 17 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 14; data = b'(return 18 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 18 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 19, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'M2Y1Yi0wZmQzLWZhMTEtNjcxYS01ZWZiLTZlNWUtZGMzNw=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 14; data = b'(return 19 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 19 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 20, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'M2Y1Yi0wZmQzLWZhMTEtNjcxYS01ZWZiLTZlNWUtZGMzNw=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 21, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'ZGFmNS0zY2UyLWYzZDItNjIwYi0yZjJkLTU2ZGEtMDZhZA=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 22, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'M2Y1Yi0wZmQzLWZhMTEtNjcxYS01ZWZiLTZlNWUtZGMzNw=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 14; data = b'(return 20 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 20 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 14; data = b'(return 21 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 21 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 23, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'M2Y1Yi0wZmQzLWZhMTEtNjcxYS01ZWZiLTZlNWUtZGMzNw=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 24, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'ZGFmNS0zY2UyLWYzZDItNjIwYi0yZjJkLTU2ZGEtMDZhZA=='])
+received: length = 14; data = b'(return 22 t)\n'
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 22 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 14; data = b'(return 23 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 23 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 25, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'M2Y1Yi0wZmQzLWZhMTEtNjcxYS01ZWZiLTZlNWUtZGMzNw=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 14; data = b'(return 24 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 24 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 14; data = b'(return 25 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 25 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 26, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'M2Y1Yi0wZmQzLWZhMTEtNjcxYS01ZWZiLTZlNWUtZGMzNw=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 27, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'ZGFmNS0zY2UyLWYzZDItNjIwYi0yZjJkLTU2ZGEtMDZhZA=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 14; data = b'(return 26 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 26 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 14; data = b'(return 27 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 27 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 28, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'M2Y1Yi0wZmQzLWZhMTEtNjcxYS01ZWZiLTZlNWUtZGMzNw=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 14; data = b'(return 28 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 28 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 29, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'M2Y1Yi0wZmQzLWZhMTEtNjcxYS01ZWZiLTZlNWUtZGMzNw=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 30, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'ZGFmNS0zY2UyLWYzZDItNjIwYi0yZjJkLTU2ZGEtMDZhZA=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 14; data = b'(return 29 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 29 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 14; data = b'(return 30 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 30 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 31, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'M2Y1Yi0wZmQzLWZhMTEtNjcxYS01ZWZiLTZlNWUtZGMzNw=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 14; data = b'(return 31 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 31 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 32, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'M2Y1Yi0wZmQzLWZhMTEtNjcxYS01ZWZiLTZlNWUtZGMzNw=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 33, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'ZGFmNS0zY2UyLWYzZDItNjIwYi0yZjJkLTU2ZGEtMDZhZA=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 14; data = b'(return 32 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 32 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 14; data = b'(return 33 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 33 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 34, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'M2Y1Yi0wZmQzLWZhMTEtNjcxYS01ZWZiLTZlNWUtZGMzNw=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 35, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'ZGFmNS0zY2UyLWYzZDItNjIwYi0yZjJkLTU2ZGEtMDZhZA=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 36, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'M2Y1Yi0wZmQzLWZhMTEtNjcxYS01ZWZiLTZlNWUtZGMzNw=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 14; data = b'(return 34 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 34 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 14; data = b'(return 35 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 35 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 37, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'M2Y1Yi0wZmQzLWZhMTEtNjcxYS01ZWZiLTZlNWUtZGMzNw=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 14; data = b'(return 36 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 36 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 14; data = b'(return 37 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 37 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 38, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'M2Y1Yi0wZmQzLWZhMTEtNjcxYS01ZWZiLTZlNWUtZGMzNw=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 39, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'ZGFmNS0zY2UyLWYzZDItNjIwYi0yZjJkLTU2ZGEtMDZhZA=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 14; data = b'(return 38 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 38 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 14; data = b'(return 39 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 39 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 40, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'M2Y1Yi0wZmQzLWZhMTEtNjcxYS01ZWZiLTZlNWUtZGMzNw=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 41, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'ZGFmNS0zY2UyLWYzZDItNjIwYi0yZjJkLTU2ZGEtMDZhZA=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 14; data = b'(return 40 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 40 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 14; data = b'(return 41 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 41 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 42, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'M2Y1Yi0wZmQzLWZhMTEtNjcxYS01ZWZiLTZlNWUtZGMzNw=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 43, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'ZGFmNS0zY2UyLWYzZDItNjIwYi0yZjJkLTU2ZGEtMDZhZA=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 14; data = b'(return 42 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 42 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 14; data = b'(return 43 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 43 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 44, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'M2Y1Yi0wZmQzLWZhMTEtNjcxYS01ZWZiLTZlNWUtZGMzNw=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 45, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'ZGFmNS0zY2UyLWYzZDItNjIwYi0yZjJkLTU2ZGEtMDZhZA=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 14; data = b'(return 44 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 44 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 14; data = b'(return 45 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 45 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 46, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'M2Y1Yi0wZmQzLWZhMTEtNjcxYS01ZWZiLTZlNWUtZGMzNw=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 47, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'ZGFmNS0zY2UyLWYzZDItNjIwYi0yZjJkLTU2ZGEtMDZhZA=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 14; data = b'(return 46 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 46 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 14; data = b'(return 47 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 47 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 48, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'M2Y1Yi0wZmQzLWZhMTEtNjcxYS01ZWZiLTZlNWUtZGMzNw=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 49, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'ZGFmNS0zY2UyLWYzZDItNjIwYi0yZjJkLTU2ZGEtMDZhZA=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 14; data = b'(return 48 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 48 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 14; data = b'(return 49 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 49 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 50, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'M2Y1Yi0wZmQzLWZhMTEtNjcxYS01ZWZiLTZlNWUtZGMzNw=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 51, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'ZGFmNS0zY2UyLWYzZDItNjIwYi0yZjJkLTU2ZGEtMDZhZA=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 14; data = b'(return 50 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 50 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 14; data = b'(return 51 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 51 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 52, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'M2Y1Yi0wZmQzLWZhMTEtNjcxYS01ZWZiLTZlNWUtZGMzNw=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 14; data = b'(return 52 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 52 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 53, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'M2Y1Yi0wZmQzLWZhMTEtNjcxYS01ZWZiLTZlNWUtZGMzNw=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 54, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'ZGFmNS0zY2UyLWYzZDItNjIwYi0yZjJkLTU2ZGEtMDZhZA=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 14; data = b'(return 53 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 53 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 14; data = b'(return 54 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 54 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 55, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'M2Y1Yi0wZmQzLWZhMTEtNjcxYS01ZWZiLTZlNWUtZGMzNw=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 56, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'ZGFmNS0zY2UyLWYzZDItNjIwYi0yZjJkLTU2ZGEtMDZhZA=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 14; data = b'(return 55 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 55 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 14; data = b'(return 56 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 56 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 57, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'M2Y1Yi0wZmQzLWZhMTEtNjcxYS01ZWZiLTZlNWUtZGMzNw=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 58, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'ZGFmNS0zY2UyLWYzZDItNjIwYi0yZjJkLTU2ZGEtMDZhZA=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 14; data = b'(return 57 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 57 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 14; data = b'(return 58 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 58 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 59, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'M2Y1Yi0wZmQzLWZhMTEtNjcxYS01ZWZiLTZlNWUtZGMzNw=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 60, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'ZGFmNS0zY2UyLWYzZDItNjIwYi0yZjJkLTU2ZGEtMDZhZA=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 61, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'M2Y1Yi0wZmQzLWZhMTEtNjcxYS01ZWZiLTZlNWUtZGMzNw=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 62, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'ZGFmNS0zY2UyLWYzZDItNjIwYi0yZjJkLTU2ZGEtMDZhZA=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 14; data = b'(return 59 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 59 t)\n')
+received: length = 14; data = b'(return 60 t)\n'
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+receiving...
+received: length = 14; data = b'(return 61 t)\n'
+(AutoLog) Called: EPCClientHandler._handle(b'(return 60 t)\n')
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 61 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 14; data = b'(return 62 t)\n'
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 62 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 63, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'M2Y1Yi0wZmQzLWZhMTEtNjcxYS01ZWZiLTZlNWUtZGMzNw=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 64, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'ZGFmNS0zY2UyLWYzZDItNjIwYi0yZjJkLTU2ZGEtMDZhZA=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 14; data = b'(return 63 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 63 t)\n')
+received: length = 14; data = b'(return 64 t)\n'
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 64 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 65, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'M2Y1Yi0wZmQzLWZhMTEtNjcxYS01ZWZiLTZlNWUtZGMzNw=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 66, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'ZGFmNS0zY2UyLWYzZDItNjIwYi0yZjJkLTU2ZGEtMDZhZA=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 14; data = b'(return 65 t)\n'
+receiving...
+received: length = 14; data = b'(return 66 t)\n'
+(AutoLog) Called: EPCClientHandler._handle(b'(return 65 t)\n')
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 66 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 67, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'M2Y1Yi0wZmQzLWZhMTEtNjcxYS01ZWZiLTZlNWUtZGMzNw=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 68, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'ZGFmNS0zY2UyLWYzZDItNjIwYi0yZjJkLTU2ZGEtMDZhZA=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 14; data = b'(return 67 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 67 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 69, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'M2Y1Yi0wZmQzLWZhMTEtNjcxYS01ZWZiLTZlNWUtZGMzNw=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 70, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'ZGFmNS0zY2UyLWYzZDItNjIwYi0yZjJkLTU2ZGEtMDZhZA=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 14; data = b'(return 68 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 68 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 14; data = b'(return 69 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 69 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 14; data = b'(return 70 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 70 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 71, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'M2Y1Yi0wZmQzLWZhMTEtNjcxYS01ZWZiLTZlNWUtZGMzNw=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 72, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'ZGFmNS0zY2UyLWYzZDItNjIwYi0yZjJkLTU2ZGEtMDZhZA=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 14; data = b'(return 71 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 71 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 14; data = b'(return 72 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 72 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 73, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'M2Y1Yi0wZmQzLWZhMTEtNjcxYS01ZWZiLTZlNWUtZGMzNw=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 74, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'ZGFmNS0zY2UyLWYzZDItNjIwYi0yZjJkLTU2ZGEtMDZhZA=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 14; data = b'(return 73 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 73 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 14; data = b'(return 74 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 74 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 75, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'M2Y1Yi0wZmQzLWZhMTEtNjcxYS01ZWZiLTZlNWUtZGMzNw=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 76, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'ZGFmNS0zY2UyLWYzZDItNjIwYi0yZjJkLTU2ZGEtMDZhZA=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 14; data = b'(return 75 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 75 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 14; data = b'(return 76 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 76 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 77, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'M2Y1Yi0wZmQzLWZhMTEtNjcxYS01ZWZiLTZlNWUtZGMzNw=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 78, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'ZGFmNS0zY2UyLWYzZDItNjIwYi0yZjJkLTU2ZGEtMDZhZA=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 14; data = b'(return 77 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 77 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 14; data = b'(return 78 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 78 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 79, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'M2Y1Yi0wZmQzLWZhMTEtNjcxYS01ZWZiLTZlNWUtZGMzNw=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 14; data = b'(return 79 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 79 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 142; data = b'(call 22 update_views ("3f5b-0fd3-fa11-671a-5efb-6e5e-dc37:31457458:948:0:948:1004,3f5b-0fd3-fa11-671a-5efb-6e5e-dc37:31457458:0:0:948:997"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 22 update_views ("3f5b-0fd3-fa11-671a-5efb-6e5e-dc37:31457458:948:0:948:1004,3f5b-0fd3-fa11-671a-5efb-6e5e-dc37:31457458:0:0:948:997"))\n')
+receiving...
+(AutoLog) Called: ThreadingEPCHandler._handle_call(22, Symbol('update_views'), ['3f5b-0fd3-fa11-671a-5efb-6e5e-dc37:31457458:948:0:948:1004,3f5b-0fd3-fa11-671a-5efb-6e5e-dc37:31457458:0:0:948:997'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 22, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 22, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 141; data = b'(call 23 update_views ("3f5b-0fd3-fa11-671a-5efb-6e5e-dc37:31457458:948:0:948:997,3f5b-0fd3-fa11-671a-5efb-6e5e-dc37:31457458:0:0:948:997"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 23 update_views ("3f5b-0fd3-fa11-671a-5efb-6e5e-dc37:31457458:948:0:948:997,3f5b-0fd3-fa11-671a-5efb-6e5e-dc37:31457458:0:0:948:997"))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(23, Symbol('update_views'), ['3f5b-0fd3-fa11-671a-5efb-6e5e-dc37:31457458:948:0:948:997,3f5b-0fd3-fa11-671a-5efb-6e5e-dc37:31457458:0:0:948:997'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 23, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 23, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+receiving...
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 85; data = b'(call 24 update_views ("3f5b-0fd3-fa11-671a-5efb-6e5e-dc37:31457458:948:0:948:997"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 24 update_views ("3f5b-0fd3-fa11-671a-5efb-6e5e-dc37:31457458:948:0:948:997"))\n')
+receiving...
+(AutoLog) Called: ThreadingEPCHandler._handle_call(24, Symbol('update_views'), ['3f5b-0fd3-fa11-671a-5efb-6e5e-dc37:31457458:948:0:948:997'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 24, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 24, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 85; data = b'(call 25 update_views ("3f5b-0fd3-fa11-671a-5efb-6e5e-dc37:31457458:948:0:948:997"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 25 update_views ("3f5b-0fd3-fa11-671a-5efb-6e5e-dc37:31457458:948:0:948:997"))\n')
+receiving...
+(AutoLog) Called: ThreadingEPCHandler._handle_call(25, Symbol('update_views'), ['3f5b-0fd3-fa11-671a-5efb-6e5e-dc37:31457458:948:0:948:997'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 25, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 25, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 85; data = b'(call 26 update_views ("3f5b-0fd3-fa11-671a-5efb-6e5e-dc37:31457458:948:0:948:997"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 26 update_views ("3f5b-0fd3-fa11-671a-5efb-6e5e-dc37:31457458:948:0:948:997"))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(26, Symbol('update_views'), ['3f5b-0fd3-fa11-671a-5efb-6e5e-dc37:31457458:948:0:948:997'])
+receiving...
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 26, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 26, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 85; data = b'(call 27 update_views ("3f5b-0fd3-fa11-671a-5efb-6e5e-dc37:31457458:948:0:948:997"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 27 update_views ("3f5b-0fd3-fa11-671a-5efb-6e5e-dc37:31457458:948:0:948:997"))\n')
+receiving...
+(AutoLog) Called: ThreadingEPCHandler._handle_call(27, Symbol('update_views'), ['3f5b-0fd3-fa11-671a-5efb-6e5e-dc37:31457458:948:0:948:997'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 27, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 27, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 85; data = b'(call 28 update_views ("3f5b-0fd3-fa11-671a-5efb-6e5e-dc37:31457458:948:0:948:997"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 28 update_views ("3f5b-0fd3-fa11-671a-5efb-6e5e-dc37:31457458:948:0:948:997"))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(28, Symbol('update_views'), ['3f5b-0fd3-fa11-671a-5efb-6e5e-dc37:31457458:948:0:948:997'])
+receiving...
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 28, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 28, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 85; data = b'(call 29 update_views ("3f5b-0fd3-fa11-671a-5efb-6e5e-dc37:31457458:948:0:948:997"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 29 update_views ("3f5b-0fd3-fa11-671a-5efb-6e5e-dc37:31457458:948:0:948:997"))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(29, Symbol('update_views'), ['3f5b-0fd3-fa11-671a-5efb-6e5e-dc37:31457458:948:0:948:997'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 29, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 29, None)
+receiving...
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 84; data = b'(call 30 update_views ("3f5b-0fd3-fa11-671a-5efb-6e5e-dc37:31457458:0:0:1896:997"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 30 update_views ("3f5b-0fd3-fa11-671a-5efb-6e5e-dc37:31457458:0:0:1896:997"))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(30, Symbol('update_views'), ['3f5b-0fd3-fa11-671a-5efb-6e5e-dc37:31457458:0:0:1896:997'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 30, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 30, None)
+receiving...
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 84; data = b'(call 31 update_views ("3f5b-0fd3-fa11-671a-5efb-6e5e-dc37:31457458:0:0:1896:997"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 31 update_views ("3f5b-0fd3-fa11-671a-5efb-6e5e-dc37:31457458:0:0:1896:997"))\n')
+receiving...
+(AutoLog) Called: ThreadingEPCHandler._handle_call(31, Symbol('update_views'), ['3f5b-0fd3-fa11-671a-5efb-6e5e-dc37:31457458:0:0:1896:997'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 31, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 31, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 72; data = b'(call 32 send_key ("3f5b-0fd3-fa11-671a-5efb-6e5e-dc37" "<backspace>"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 32 send_key ("3f5b-0fd3-fa11-671a-5efb-6e5e-dc37" "<backspace>"))\n')
+receiving...
+(AutoLog) Called: ThreadingEPCHandler._handle_call(32, Symbol('send_key'), ['3f5b-0fd3-fa11-671a-5efb-6e5e-dc37', '<backspace>'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 32, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 32, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 85; data = b'(call 33 update_views ("3f5b-0fd3-fa11-671a-5efb-6e5e-dc37:31457458:0:0:1920:1025"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 33 update_views ("3f5b-0fd3-fa11-671a-5efb-6e5e-dc37:31457458:0:0:1920:1025"))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(33, Symbol('update_views'), ['3f5b-0fd3-fa11-671a-5efb-6e5e-dc37:31457458:0:0:1920:1025'])
+receiving...
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 33, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 33, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 80, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'M2Y1Yi0wZmQzLWZhMTEtNjcxYS01ZWZiLTZlNWUtZGMzNw=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 81, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'ZGFmNS0zY2UyLWYzZDItNjIwYi0yZjJkLTU2ZGEtMDZhZA=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 14; data = b'(return 80 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 80 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 14; data = b'(return 81 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 81 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 82, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'M2Y1Yi0wZmQzLWZhMTEtNjcxYS01ZWZiLTZlNWUtZGMzNw=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 83, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'ZGFmNS0zY2UyLWYzZDItNjIwYi0yZjJkLTU2ZGEtMDZhZA=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 14; data = b'(return 82 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 82 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 14; data = b'(return 83 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 83 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 94; data = b'(call 34 execute_function ("3f5b-0fd3-fa11-671a-5efb-6e5e-dc37" "insert_or_export_text" "n"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 34 execute_function ("3f5b-0fd3-fa11-671a-5efb-6e5e-dc37" "insert_or_export_text" "n"))\n')
+receiving...
+(AutoLog) Called: ThreadingEPCHandler._handle_call(34, Symbol('execute_function'), ['3f5b-0fd3-fa11-671a-5efb-6e5e-dc37', 'insert_or_export_text', 'n'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 34, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 34, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 99; data = b'(call 35 execute_function ("3f5b-0fd3-fa11-671a-5efb-6e5e-dc37" "insert_or_scroll_down_page" "u"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 35 execute_function ("3f5b-0fd3-fa11-671a-5efb-6e5e-dc37" "insert_or_scroll_down_page" "u"))\n')
+receiving...
+(AutoLog) Called: ThreadingEPCHandler._handle_call(35, Symbol('execute_function'), ['3f5b-0fd3-fa11-671a-5efb-6e5e-dc37', 'insert_or_scroll_down_page', 'u'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 35, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 35, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 94; data = b'(call 36 execute_function ("3f5b-0fd3-fa11-671a-5efb-6e5e-dc37" "insert_or_focus_input" "i"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 36 execute_function ("3f5b-0fd3-fa11-671a-5efb-6e5e-dc37" "insert_or_focus_input" "i"))\n')
+receiving...
+(AutoLog) Called: ThreadingEPCHandler._handle_call(36, Symbol('execute_function'), ['3f5b-0fd3-fa11-671a-5efb-6e5e-dc37', 'insert_or_focus_input', 'i'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 36, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 36, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 72; data = b'(call 37 send_key ("3f5b-0fd3-fa11-671a-5efb-6e5e-dc37" "<backspace>"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 37 send_key ("3f5b-0fd3-fa11-671a-5efb-6e5e-dc37" "<backspace>"))\n')
+receiving...
+(AutoLog) Called: ThreadingEPCHandler._handle_call(37, Symbol('send_key'), ['3f5b-0fd3-fa11-671a-5efb-6e5e-dc37', '<backspace>'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 37, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 37, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 72; data = b'(call 38 send_key ("3f5b-0fd3-fa11-671a-5efb-6e5e-dc37" "<backspace>"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 38 send_key ("3f5b-0fd3-fa11-671a-5efb-6e5e-dc37" "<backspace>"))\n')
+receiving...
+(AutoLog) Called: ThreadingEPCHandler._handle_call(38, Symbol('send_key'), ['3f5b-0fd3-fa11-671a-5efb-6e5e-dc37', '<backspace>'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 38, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 38, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 72; data = b'(call 39 send_key ("3f5b-0fd3-fa11-671a-5efb-6e5e-dc37" "<backspace>"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 39 send_key ("3f5b-0fd3-fa11-671a-5efb-6e5e-dc37" "<backspace>"))\n')
+receiving...
+(AutoLog) Called: ThreadingEPCHandler._handle_call(39, Symbol('send_key'), ['3f5b-0fd3-fa11-671a-5efb-6e5e-dc37', '<backspace>'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 39, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 39, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 72; data = b'(call 40 send_key ("3f5b-0fd3-fa11-671a-5efb-6e5e-dc37" "<backspace>"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 40 send_key ("3f5b-0fd3-fa11-671a-5efb-6e5e-dc37" "<backspace>"))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(40, Symbol('send_key'), ['3f5b-0fd3-fa11-671a-5efb-6e5e-dc37', '<backspace>'])
+receiving...
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 40, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 40, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 95; data = b'(call 41 execute_function ("3f5b-0fd3-fa11-671a-5efb-6e5e-dc37" "insert_or_scroll_right" "l"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 41 execute_function ("3f5b-0fd3-fa11-671a-5efb-6e5e-dc37" "insert_or_scroll_right" "l"))\n')
+receiving...
+(AutoLog) Called: ThreadingEPCHandler._handle_call(41, Symbol('execute_function'), ['3f5b-0fd3-fa11-671a-5efb-6e5e-dc37', 'insert_or_scroll_right', 'l'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 41, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 41, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 94; data = b'(call 42 execute_function ("3f5b-0fd3-fa11-671a-5efb-6e5e-dc37" "insert_or_focus_input" "i"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 42 execute_function ("3f5b-0fd3-fa11-671a-5efb-6e5e-dc37" "insert_or_focus_input" "i"))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(42, Symbol('execute_function'), ['3f5b-0fd3-fa11-671a-5efb-6e5e-dc37', 'insert_or_focus_input', 'i'])
+receiving...
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 42, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 42, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 94; data = b'(call 43 execute_function ("3f5b-0fd3-fa11-671a-5efb-6e5e-dc37" "insert_or_export_text" "n"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 43 execute_function ("3f5b-0fd3-fa11-671a-5efb-6e5e-dc37" "insert_or_export_text" "n"))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(43, Symbol('execute_function'), ['3f5b-0fd3-fa11-671a-5efb-6e5e-dc37', 'insert_or_export_text', 'n'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 43, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 43, None)
+receiving...
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 99; data = b'(call 44 execute_function ("3f5b-0fd3-fa11-671a-5efb-6e5e-dc37" "insert_or_scroll_down_page" "u"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 44 execute_function ("3f5b-0fd3-fa11-671a-5efb-6e5e-dc37" "insert_or_scroll_down_page" "u"))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(44, Symbol('execute_function'), ['3f5b-0fd3-fa11-671a-5efb-6e5e-dc37', 'insert_or_scroll_down_page', 'u'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 44, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 44, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+receiving...
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 95; data = b'(call 45 execute_function ("3f5b-0fd3-fa11-671a-5efb-6e5e-dc37" "insert_or_close_buffer" "x"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 45 execute_function ("3f5b-0fd3-fa11-671a-5efb-6e5e-dc37" "insert_or_close_buffer" "x"))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(45, Symbol('execute_function'), ['3f5b-0fd3-fa11-671a-5efb-6e5e-dc37', 'insert_or_close_buffer', 'x'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 45, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 45, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+receiving...
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 64; data = b'(call 46 send_key ("3f5b-0fd3-fa11-671a-5efb-6e5e-dc37" "\xe7\xbd\x91"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 46 send_key ("3f5b-0fd3-fa11-671a-5efb-6e5e-dc37" "\xe7\xbd\x91"))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(46, Symbol('send_key'), ['3f5b-0fd3-fa11-671a-5efb-6e5e-dc37', '网'])
+receiving...
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 46, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 46, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 64; data = b'(call 47 send_key ("3f5b-0fd3-fa11-671a-5efb-6e5e-dc37" "\xe7\xbb\x9c"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 47 send_key ("3f5b-0fd3-fa11-671a-5efb-6e5e-dc37" "\xe7\xbb\x9c"))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(47, Symbol('send_key'), ['3f5b-0fd3-fa11-671a-5efb-6e5e-dc37', '络'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 47, None]
+receiving...
+(AutoLog) Called: ThreadingEPCHandler._send('return', 47, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 69; data = b'(call 48 send_key ("3f5b-0fd3-fa11-671a-5efb-6e5e-dc37" "<return>"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 48 send_key ("3f5b-0fd3-fa11-671a-5efb-6e5e-dc37" "<return>"))\n')
+receiving...
+(AutoLog) Called: ThreadingEPCHandler._handle_call(48, Symbol('send_key'), ['3f5b-0fd3-fa11-671a-5efb-6e5e-dc37', '<return>'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 48, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 48, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 84, Symbol('eval-in-emacs'), ['eaf--create-new-browser-buffer', 'MGQ2My05MzhkLTA5YzUtOTY0NS1hNDY2LTU3N2QtZmZjOA=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 78; data = b'(return 84 #<buffer Browser Popup Window 0d63-938d-09c5-9645-a466-577d-ffc8>)\n'
+receiving...
+received: length = 85; data = b'(call 49 update_views ("0d63-938d-09c5-9645-a466-577d-ffc8:31457458:0:0:1920:1025"))\n'
+(AutoLog) Called: EPCClientHandler._handle(b'(return 84 #<buffer Browser Popup Window 0d63-938d-09c5-9645-a466-577d-ffc8>)\n')
+(return 84 ...): Got too many arguments in the reply: [Symbol('#<buffer'), Symbol('Browser'), Symbol('Popup'), Symbol('Window'), Symbol('0d63-938d-09c5-9645-a466-577d-ffc8>')]
+EPCError("(return 84 ...): Got too many arguments in the reply: [Symbol('#<buffer'), Symbol('Browser'), Symbol('Popup'), Symbol('Window'), Symbol('0d63-938d-09c5-9645-a466-577d-ffc8>')]")
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 49 update_views ("0d63-938d-09c5-9645-a466-577d-ffc8:31457458:0:0:1920:1025"))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(49, Symbol('update_views'), ['0d63-938d-09c5-9645-a466-577d-ffc8:31457458:0:0:1920:1025'])
+receiving...
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 49, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 49, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 85, Symbol('eval-in-emacs'), ['eaf--update-buffer-details', 'MGQ2My05MzhkLTA5YzUtOTY0NS1hNDY2LTU3N2QtZmZjOA==', 'aHR0cHM6Ly9zZWFyY2guYmlsaWJpbGkuY29tL2FsbD9rZXl3b3JkPWxpbnV4572R57ucJmZyb21fc291cmNlPXdlYnRvcF9zZWFyY2gmc3BtX2lkX2Zyb209MzMzLjg1MQ==', 'aHR0cHM6Ly9zZWFyY2guYmlsaWJpbGkuY29tL2FsbD9rZXl3b3JkPWxpbnV4572R57ucJmZyb21fc291cmNlPXdlYnRvcF9zZWFyY2gmc3BtX2lkX2Zyb209MzMzLjg1MQ=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 14; data = b'(return 85 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 85 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 86, Symbol('eval-in-emacs'), ['eaf--update-buffer-details', 'MGQ2My05MzhkLTA5YzUtOTY0NS1hNDY2LTU3N2QtZmZjOA==', 'bGludXjnvZHnu5wgLSDmkJzntKLnu5PmnpwgLSDlk5Tlk6nlk5Tlk6nlvLnluZXop4bpopHnvZEgLSAoIOOCnC0g44KcKeOBpOODrSDkub7mna9+IC0gYmlsaWJpbGk=', 'aHR0cHM6Ly9zZWFyY2guYmlsaWJpbGkuY29tL2FsbD9rZXl3b3JkPWxpbnV4572R57ucJmZyb21fc291cmNlPXdlYnRvcF9zZWFyY2gmc3BtX2lkX2Zyb209MzMzLjg1MQ=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 14; data = b'(return 86 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 86 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 87, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'MGQ2My05MzhkLTA5YzUtOTY0NS1hNDY2LTU3N2QtZmZjOA=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 88, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'M2Y1Yi0wZmQzLWZhMTEtNjcxYS01ZWZiLTZlNWUtZGMzNw=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 14; data = b'(return 87 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 87 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 14; data = b'(return 88 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 88 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 89, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'MGQ2My05MzhkLTA5YzUtOTY0NS1hNDY2LTU3N2QtZmZjOA=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 90, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'M2Y1Yi0wZmQzLWZhMTEtNjcxYS01ZWZiLTZlNWUtZGMzNw=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 14; data = b'(return 89 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 89 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 14; data = b'(return 90 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 90 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 91, Symbol('eval-in-emacs'), ['eaf--create-new-browser-buffer', 'NzliNS05NTkxLWJmYWUtNDBhZC01Nzg1LWU4MGEtMmM1OQ=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 78; data = b'(return 91 #<buffer Browser Popup Window 79b5-9591-bfae-40ad-5785-e80a-2c59>)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 91 #<buffer Browser Popup Window 79b5-9591-bfae-40ad-5785-e80a-2c59>)\n')
+(return 91 ...): Got too many arguments in the reply: [Symbol('#<buffer'), Symbol('Browser'), Symbol('Popup'), Symbol('Window'), Symbol('79b5-9591-bfae-40ad-5785-e80a-2c59>')]
+EPCError("(return 91 ...): Got too many arguments in the reply: [Symbol('#<buffer'), Symbol('Browser'), Symbol('Popup'), Symbol('Window'), Symbol('79b5-9591-bfae-40ad-5785-e80a-2c59>')]")
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 85; data = b'(call 50 update_views ("79b5-9591-bfae-40ad-5785-e80a-2c59:31457458:0:0:1920:1025"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 50 update_views ("79b5-9591-bfae-40ad-5785-e80a-2c59:31457458:0:0:1920:1025"))\n')
+receiving...
+(AutoLog) Called: ThreadingEPCHandler._handle_call(50, Symbol('update_views'), ['79b5-9591-bfae-40ad-5785-e80a-2c59:31457458:0:0:1920:1025'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 50, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 50, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 92, Symbol('eval-in-emacs'), ['eaf--update-buffer-details', 'NzliNS05NTkxLWJmYWUtNDBhZC01Nzg1LWU4MGEtMmM1OQ==', 'aHR0cHM6Ly93d3cuYmlsaWJpbGkuY29tL3ZpZGVvL0JWMTJpNHkxNDdldD9mcm9tPXNlYXJjaCZzZWlkPTExMzc5MjU3ODk0NTY1NDM0MzEw', 'aHR0cHM6Ly93d3cuYmlsaWJpbGkuY29tL3ZpZGVvL0JWMTJpNHkxNDdldD9mcm9tPXNlYXJjaCZzZWlkPTExMzc5MjU3ODk0NTY1NDM0MzEw'])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 14; data = b'(return 92 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 92 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 93, Symbol('eval-in-emacs'), ['eaf--update-buffer-details', 'NzliNS05NTkxLWJmYWUtNDBhZC01Nzg1LWU4MGEtMmM1OQ==', '6LaF57uG6LaF5by6TGludXjnvZHnu5znvJbnqItf5ZOU5ZOp5ZOU5ZOpICjjgpwt44KcKeOBpOODrSDlubLmna9+LWJpbGliaWxp', 'aHR0cHM6Ly93d3cuYmlsaWJpbGkuY29tL3ZpZGVvL0JWMTJpNHkxNDdldD9mcm9tPXNlYXJjaCZzZWlkPTExMzc5MjU3ODk0NTY1NDM0MzEw'])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 14; data = b'(return 93 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 93 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 143; data = b'(call 51 update_views ("79b5-9591-bfae-40ad-5785-e80a-2c59:31457458:960:0:960:1032,79b5-9591-bfae-40ad-5785-e80a-2c59:31457458:0:0:960:1025"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 51 update_views ("79b5-9591-bfae-40ad-5785-e80a-2c59:31457458:960:0:960:1032,79b5-9591-bfae-40ad-5785-e80a-2c59:31457458:0:0:960:1025"))\n')
+receiving...
+(AutoLog) Called: ThreadingEPCHandler._handle_call(51, Symbol('update_views'), ['79b5-9591-bfae-40ad-5785-e80a-2c59:31457458:960:0:960:1032,79b5-9591-bfae-40ad-5785-e80a-2c59:31457458:0:0:960:1025'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 51, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 51, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 143; data = b'(call 52 update_views ("79b5-9591-bfae-40ad-5785-e80a-2c59:31457458:960:0:960:1025,79b5-9591-bfae-40ad-5785-e80a-2c59:31457458:0:0:960:1025"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 52 update_views ("79b5-9591-bfae-40ad-5785-e80a-2c59:31457458:960:0:960:1025,79b5-9591-bfae-40ad-5785-e80a-2c59:31457458:0:0:960:1025"))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(52, Symbol('update_views'), ['79b5-9591-bfae-40ad-5785-e80a-2c59:31457458:960:0:960:1025,79b5-9591-bfae-40ad-5785-e80a-2c59:31457458:0:0:960:1025'])
+receiving...
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 52, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 52, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 86; data = b'(call 53 update_views ("79b5-9591-bfae-40ad-5785-e80a-2c59:31457458:960:0:960:1025"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 53 update_views ("79b5-9591-bfae-40ad-5785-e80a-2c59:31457458:960:0:960:1025"))\n')
+receiving...
+(AutoLog) Called: ThreadingEPCHandler._handle_call(53, Symbol('update_views'), ['79b5-9591-bfae-40ad-5785-e80a-2c59:31457458:960:0:960:1025'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 53, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 53, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 86; data = b'(call 54 update_views ("79b5-9591-bfae-40ad-5785-e80a-2c59:31457458:960:0:960:1025"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 54 update_views ("79b5-9591-bfae-40ad-5785-e80a-2c59:31457458:960:0:960:1025"))\n')
+receiving...
+(AutoLog) Called: ThreadingEPCHandler._handle_call(54, Symbol('update_views'), ['79b5-9591-bfae-40ad-5785-e80a-2c59:31457458:960:0:960:1025'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 54, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 54, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 86; data = b'(call 55 update_views ("79b5-9591-bfae-40ad-5785-e80a-2c59:31457458:960:0:960:1025"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 55 update_views ("79b5-9591-bfae-40ad-5785-e80a-2c59:31457458:960:0:960:1025"))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(55, Symbol('update_views'), ['79b5-9591-bfae-40ad-5785-e80a-2c59:31457458:960:0:960:1025'])
+receiving...
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 55, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 55, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 28; data = b'(call 56 update_views (""))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 56 update_views (""))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(56, Symbol('update_views'), [''])
+receiving...
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 56, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 56, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 28; data = b'(call 57 update_views (""))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 57 update_views (""))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(57, Symbol('update_views'), [''])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 57, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 57, None)
+receiving...
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 86; data = b'(call 58 update_views ("79b5-9591-bfae-40ad-5785-e80a-2c59:31457458:960:0:960:1023"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 58 update_views ("79b5-9591-bfae-40ad-5785-e80a-2c59:31457458:960:0:960:1023"))\n')
+receiving...
+(AutoLog) Called: ThreadingEPCHandler._handle_call(58, Symbol('update_views'), ['79b5-9591-bfae-40ad-5785-e80a-2c59:31457458:960:0:960:1023'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 58, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 58, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 86; data = b'(call 59 update_views ("79b5-9591-bfae-40ad-5785-e80a-2c59:31457458:960:0:960:1025"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 59 update_views ("79b5-9591-bfae-40ad-5785-e80a-2c59:31457458:960:0:960:1025"))\n')
+receiving...
+(AutoLog) Called: ThreadingEPCHandler._handle_call(59, Symbol('update_views'), ['79b5-9591-bfae-40ad-5785-e80a-2c59:31457458:960:0:960:1025'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 59, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 59, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 86; data = b'(call 60 update_views ("79b5-9591-bfae-40ad-5785-e80a-2c59:31457458:960:0:960:1025"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 60 update_views ("79b5-9591-bfae-40ad-5785-e80a-2c59:31457458:960:0:960:1025"))\n')
+receiving...
+(AutoLog) Called: ThreadingEPCHandler._handle_call(60, Symbol('update_views'), ['79b5-9591-bfae-40ad-5785-e80a-2c59:31457458:960:0:960:1025'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 60, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 60, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 86; data = b'(call 61 update_views ("79b5-9591-bfae-40ad-5785-e80a-2c59:31457458:960:0:960:1025"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 61 update_views ("79b5-9591-bfae-40ad-5785-e80a-2c59:31457458:960:0:960:1025"))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(61, Symbol('update_views'), ['79b5-9591-bfae-40ad-5785-e80a-2c59:31457458:960:0:960:1025'])
+receiving...
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 61, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 61, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 86; data = b'(call 62 update_views ("79b5-9591-bfae-40ad-5785-e80a-2c59:31457458:960:0:960:1025"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 62 update_views ("79b5-9591-bfae-40ad-5785-e80a-2c59:31457458:960:0:960:1025"))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(62, Symbol('update_views'), ['79b5-9591-bfae-40ad-5785-e80a-2c59:31457458:960:0:960:1025'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 62, None]
+receiving...
+(AutoLog) Called: ThreadingEPCHandler._send('return', 62, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 85; data = b'(call 63 update_views ("79b5-9591-bfae-40ad-5785-e80a-2c59:31457458:0:0:1920:1025"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 63 update_views ("79b5-9591-bfae-40ad-5785-e80a-2c59:31457458:0:0:1920:1025"))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(63, Symbol('update_views'), ['79b5-9591-bfae-40ad-5785-e80a-2c59:31457458:0:0:1920:1025'])
+receiving...
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 63, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 63, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 94, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'NzliNS05NTkxLWJmYWUtNDBhZC01Nzg1LWU4MGEtMmM1OQ=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 95, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'MGQ2My05MzhkLTA5YzUtOTY0NS1hNDY2LTU3N2QtZmZjOA=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 14; data = b'(return 94 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 94 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 14; data = b'(return 95 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 95 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 96, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'NzliNS05NTkxLWJmYWUtNDBhZC01Nzg1LWU4MGEtMmM1OQ=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 97, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'MGQ2My05MzhkLTA5YzUtOTY0NS1hNDY2LTU3N2QtZmZjOA=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 14; data = b'(return 96 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 96 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 14; data = b'(return 97 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 97 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 98, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'NzliNS05NTkxLWJmYWUtNDBhZC01Nzg1LWU4MGEtMmM1OQ=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 99, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'MGQ2My05MzhkLTA5YzUtOTY0NS1hNDY2LTU3N2QtZmZjOA=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 14; data = b'(return 98 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 98 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 14; data = b'(return 99 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 99 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 100, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'NzliNS05NTkxLWJmYWUtNDBhZC01Nzg1LWU4MGEtMmM1OQ=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 101, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'MGQ2My05MzhkLTA5YzUtOTY0NS1hNDY2LTU3N2QtZmZjOA=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 15; data = b'(return 100 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 100 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 15; data = b'(return 101 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 101 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 102, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'NzliNS05NTkxLWJmYWUtNDBhZC01Nzg1LWU4MGEtMmM1OQ=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 103, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'MGQ2My05MzhkLTA5YzUtOTY0NS1hNDY2LTU3N2QtZmZjOA=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 15; data = b'(return 102 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 102 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 15; data = b'(return 103 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 103 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 104, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'NzliNS05NTkxLWJmYWUtNDBhZC01Nzg1LWU4MGEtMmM1OQ=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 105, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'MGQ2My05MzhkLTA5YzUtOTY0NS1hNDY2LTU3N2QtZmZjOA=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 15; data = b'(return 104 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 104 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 15; data = b'(return 105 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 105 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 106, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'NzliNS05NTkxLWJmYWUtNDBhZC01Nzg1LWU4MGEtMmM1OQ=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 107, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'MGQ2My05MzhkLTA5YzUtOTY0NS1hNDY2LTU3N2QtZmZjOA=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 15; data = b'(return 106 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 106 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 15; data = b'(return 107 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 107 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 108, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'NzliNS05NTkxLWJmYWUtNDBhZC01Nzg1LWU4MGEtMmM1OQ=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 109, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'MGQ2My05MzhkLTA5YzUtOTY0NS1hNDY2LTU3N2QtZmZjOA=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 15; data = b'(return 108 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 108 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 15; data = b'(return 109 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 109 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 110, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'NzliNS05NTkxLWJmYWUtNDBhZC01Nzg1LWU4MGEtMmM1OQ=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 111, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'MGQ2My05MzhkLTA5YzUtOTY0NS1hNDY2LTU3N2QtZmZjOA=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 15; data = b'(return 110 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 110 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 15; data = b'(return 111 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 111 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 112, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'NzliNS05NTkxLWJmYWUtNDBhZC01Nzg1LWU4MGEtMmM1OQ=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 113, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'MGQ2My05MzhkLTA5YzUtOTY0NS1hNDY2LTU3N2QtZmZjOA=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 15; data = b'(return 112 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 112 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 15; data = b'(return 113 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 113 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 114, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'NzliNS05NTkxLWJmYWUtNDBhZC01Nzg1LWU4MGEtMmM1OQ=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 115, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'MGQ2My05MzhkLTA5YzUtOTY0NS1hNDY2LTU3N2QtZmZjOA=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 15; data = b'(return 114 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 114 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 15; data = b'(return 115 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 115 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 116, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'NzliNS05NTkxLWJmYWUtNDBhZC01Nzg1LWU4MGEtMmM1OQ=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 117, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'MGQ2My05MzhkLTA5YzUtOTY0NS1hNDY2LTU3N2QtZmZjOA=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 15; data = b'(return 116 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 116 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 15; data = b'(return 117 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 117 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 118, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'NzliNS05NTkxLWJmYWUtNDBhZC01Nzg1LWU4MGEtMmM1OQ=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 119, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'MGQ2My05MzhkLTA5YzUtOTY0NS1hNDY2LTU3N2QtZmZjOA=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 15; data = b'(return 118 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 118 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 15; data = b'(return 119 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 119 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 120, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'NzliNS05NTkxLWJmYWUtNDBhZC01Nzg1LWU4MGEtMmM1OQ=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 121, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'MGQ2My05MzhkLTA5YzUtOTY0NS1hNDY2LTU3N2QtZmZjOA=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 15; data = b'(return 120 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 120 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 15; data = b'(return 121 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 121 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 122, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'NzliNS05NTkxLWJmYWUtNDBhZC01Nzg1LWU4MGEtMmM1OQ=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 123, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'MGQ2My05MzhkLTA5YzUtOTY0NS1hNDY2LTU3N2QtZmZjOA=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 15; data = b'(return 122 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 122 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 15; data = b'(return 123 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 123 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 84; data = b'(call 64 update_views ("79b5-9591-bfae-40ad-5785-e80a-2c59:31457458:0:0:1920:497"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 64 update_views ("79b5-9591-bfae-40ad-5785-e80a-2c59:31457458:0:0:1920:497"))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(64, Symbol('update_views'), ['79b5-9591-bfae-40ad-5785-e80a-2c59:31457458:0:0:1920:497'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 64, None]
+receiving...
+(AutoLog) Called: ThreadingEPCHandler._send('return', 64, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 84; data = b'(call 65 update_views ("79b5-9591-bfae-40ad-5785-e80a-2c59:31457458:0:0:1920:497"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 65 update_views ("79b5-9591-bfae-40ad-5785-e80a-2c59:31457458:0:0:1920:497"))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(65, Symbol('update_views'), ['79b5-9591-bfae-40ad-5785-e80a-2c59:31457458:0:0:1920:497'])
+receiving...
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 65, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 65, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 84; data = b'(call 66 update_views ("79b5-9591-bfae-40ad-5785-e80a-2c59:31457458:0:0:1920:929"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 66 update_views ("79b5-9591-bfae-40ad-5785-e80a-2c59:31457458:0:0:1920:929"))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(66, Symbol('update_views'), ['79b5-9591-bfae-40ad-5785-e80a-2c59:31457458:0:0:1920:929'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 66, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 66, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+receiving...
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 25; data = b'(call 67 kill_emacs nil)\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 67 kill_emacs nil)\n')
+receiving...
+(AutoLog) Called: ThreadingEPCHandler._handle_call(67, Symbol('kill_emacs'), [])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 67, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 67, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 124, Symbol('eval-in-emacs'), ['eaf-activate-emacs-window'])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 125, Symbol('eval-in-emacs'), ['eaf-activate-emacs-window'])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 126, Symbol('eval-in-emacs'), ['eaf-activate-emacs-window'])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 127, Symbol('eval-in-emacs'), ['eaf-activate-emacs-window'])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 128, Symbol('eval-in-emacs'), ['eaf--update-buffer-details', 'ZGFmNS0zY2UyLWYzZDItNjIwYi0yZjJkLTU2ZGEtMDZhZA==', '', ''])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 129, Symbol('eval-in-emacs'), ['eaf--update-buffer-details', 'M2Y1Yi0wZmQzLWZhMTEtNjcxYS01ZWZiLTZlNWUtZGMzNw==', '', ''])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 130, Symbol('eval-in-emacs'), ['eaf--update-buffer-details', 'MGQ2My05MzhkLTA5YzUtOTY0NS1hNDY2LTU3N2QtZmZjOA==', '', ''])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 131, Symbol('eval-in-emacs'), ['eaf--update-buffer-details', 'NzliNS05NTkxLWJmYWUtNDBhZC01Nzg1LWU4MGEtMmM1OQ==', '', ''])
+(AutoLog) Returns: EPCClientHandler._send(...) = None

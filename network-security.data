@@ -1,3 +1,0 @@
-(
- (:id "sha1:f6789462721fa06cb4dc415b86e6a96b35a9fa2d" :fingerprints ("sha1:65:4c:fc:37:4f:b0:31:67:90:6e:84:33:52:61:c3:3e:c8:af:b3:42") :host "api.fanyi.baidu.com:443" :conditions (:renegotiation-info-ext))
-)

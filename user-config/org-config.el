@@ -1,6 +1,6 @@
 (use-package org-bullets
   :custom
-  (org-bullets-bullet-list '("◉" "☯" "○" "☯" "✸" "☯" "✿" "☯" "✜" "☯" "◆" "☯" "▶"))
+  (org-bullets-bullet-list '("◉"  "○" "✸" "◆" "✿"  "✜" "▶" "☯" "☯""☯"  "☯" "☯" "☯" ))
   (org-ellipsis "⤵")
   :hook (org-mode . org-bullets-mode))
 (font-lock-add-keywords 'org-mode
@@ -70,8 +70,14 @@
      (latex . t)
      (plantuml . t)
      (R . t)))
-  
   )
 
 ;; 显示图片
 (setq org-image-actual-width 300)    
+
+;; taget notes
+(setq org-capture-templates
+      '(("t" "Todo" entry (file+headline "~/.emacs.d/gtd.org" "Todo List")
+	 "* TODO [#B] %?\n %i\n"
+	 :empty-lines 1)))
+(setq org-src-fontify-natively t)

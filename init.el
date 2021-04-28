@@ -10,15 +10,15 @@
     (unless (assoc package package-archive-contents)
       (package-refresh-contents))
     (package-install package)))
-
-
 ;; use-package
 (setq use-package-always-ensure t)
 
+(global-evil-leader-mode)
 ;; evil
 (add-to-list 'load-path "~/.emacs.d/plugins/evil")
 (require 'evil)
 (evil-mode 1) 
+(load-file "~/.emacs.d/user-config/evil.el")
 ;; theme
 (setq frame-resize-pixelwise t) ;;解决aweosme wm窗口空缺
 
@@ -34,7 +34,7 @@
   :defer t)
 
 ;; setting
-(set-face-attribute 'default nil :height 200) ;;字体大小
+(set-face-attribute 'default nil :height 150) ;;字体大小
 (setq make-backup-files nil) ;; 关闭自动备份
 (setq backup-directory-alist
       '((".*" . "~/.emacs.d/var/backups")))
@@ -54,29 +54,14 @@
 
 ;; yes/no is y/n
 (defalias 'yes-or-no-p 'y-or-n-p)
-
-;; auto company
-(use-package company
-  :config
-  (setq company-dabbrev-code-everywhere t
-        company-dabbrev-code-modes t
-        company-dabbrev-code-other-buffers 'all
-        company-dabbrev-downcase nil
-        company-dabbrev-ignore-case t
-        company-dabbrev-other-buffers 'all
-        company-require-match nil
-        company-minimum-prefix-length 2
-        company-show-numbers t
-        company-tooltip-limit 20
-        company-idle-delay 0
-        company-echo-delay 0
-        company-tooltip-offset-display 'scrollbar
-        company-begin-commands '(self-insert-command))
-  (push '(company-semantic :with company-yasnippet) company-backends)
-  :hook ((after-init . global-company-mode)))
-
-
-
+;; 自动缩进
+(electric-indent-mode t)
+;; 自动启动全屏
+(add-to-list 'default-frame-alist '(fullscreen . maximized))
+;; 显示匹配光标
+(add-hook 'emacs-lisp-mode-hook 'show-paren-mode)
+;; 高粱当前行
+(global-hl-line-mode t)
 ;; 启动界面
 (use-package dashboard
   :ensure t
@@ -100,19 +85,6 @@
 	  eww-mode
 	  Man-mode
 	  Woman-Mode) . english-teacher-follow-mode))
-
-;; term
-(use-package vterm
-  :ensure t
-  :bind (("C-' C-t" . open-vterm))
-  :config
-  (define-key vterm-mode-map (kbd "C-c p" 'previous-buffer))
-  (define-key vterm-mode-map (kbd "C-c n" 'next-buffer))
-  )
-
-
-
-
 ;; eaf 
 (use-package eaf
   :load-path "~/.emacs.d/site-lisp/emacs-application-framework" ; Set to "/usr/share/emacs/site-lisp/eaf" if installed from AUR
@@ -131,7 +103,7 @@
   (eaf-bind-key nil "M-q" eaf-browser-keybinding))
   ;(setq eaf-proxy-type "http")
   ;(setq eaf-proxy-host "127.0.0.1")
-  ;(setq eaf-proxy-port "1080")
+  ;(setq eaf-proxy-port "1089")
 
 
 ;; theme
@@ -157,21 +129,45 @@
   :config
   (load-file "~/.emacs.d/user-config/tabline.el"))
 
-
-;;(setq doom-modeline-height 2)
-
-
-
-(use-package company-box
-  :ensure t
-  :hook (company-mode-hook . company-box-mode))
-
-;; c/c++
-(load-file "~/.emacs.d/user-config/ccls-config.el")
-
-;; java
-(load-file "~/.emacs.d/user-config/java-config.el")
-
 ;; org config
 (load-file "~/.emacs.d/user-config/org-config.el")
+
+;;counsel
+(use-package counsel
+  :config
+  (global-set-key (kbd "M-x") 'counsel-M-x))
+
+(use-package company
+  :ensure t)
+(with-eval-after-load 'company
+(global-company-mode t)  
+(define-key company-active-map (kbd "M-n") nil)
+(define-key company-active-map (kbd "M-p") nil)
+(define-key company-active-map (kbd "C-n") #'company-select-next)
+(define-key company-active-map (kbd "C-p") #'company-select-previous))
+(setq company-show-numbers t)
+(use-package company-box
+  :ensure t
+  :config
+  (add-hook 'company-mode-hook 'company-box-mode))
+
+
+(use-package company-jedi
+  :ensure t)
+(defun my/python-mode-hook ()
+  (add-to-list 'company-backends 'company-jedi))
+(add-hook 'python-mode-hook 'my/python-mode-hook)
+
+;; c/c++ lsp
+(which-key-mode)
+(add-hook 'c-mode-hook 'lsp)
+(add-hook 'c++-mode-hook 'lsp)
+
+(with-eval-after-load 'lsp-mode
+  (add-hook 'lsp-mode-hook #'lsp-enable-which-key-integration)
+  (require 'dap-cpptools)
+  (yas-global-mode))
+
+;; 彩虹猫
+(load-file "~/.emacs.d/user-config/nyan-mode.el")
 
